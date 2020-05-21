@@ -11,6 +11,7 @@ VOLUME "/bot/config"
 
 EXPOSE 6502
 EXPOSE 64738
+EXPOSE 8181
 
 COPY start.sh start.sh
 RUN chmod 777 start.sh
