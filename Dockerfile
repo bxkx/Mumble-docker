@@ -1,5 +1,5 @@
 FROM python:3-slim
-RUN apt-get update && apt-get install mumble-server ffmpeg && apt-get clean
+RUN apt-get update && apt-get install -y mumble-server ffmpeg && apt-get clean
 
 ADD ./botamusique /bot
 
