@@ -1,5 +1,5 @@
 FROM python:3-slim
-RUN apt-get update && apt-get install -y mumble-server ffmpeg python3-dev musl-lib libmagic jpeg-dev zlib-dev gcc && apt-get clean
+RUN apt-get update && apt-get install -y mumble-server ffmpeg python3-dev opus-tools libmagic-dev curl && apt-get clean
 
 ADD ./botamusique /bot
 
