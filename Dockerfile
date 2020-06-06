@@ -1,5 +1,5 @@
-FROM python:3-alpine
-RUN apk add --no-cache mumble-server ffmpeg
+FROM python:3-slim
+RUN apt-get update && apt-get install mumble-server ffmpeg && apt-get clean
 
 ADD ./botamusique /bot
 
