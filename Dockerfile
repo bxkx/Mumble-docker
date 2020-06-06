@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3-alpine
 RUN apt-get update && apt-get install -y mumble-server ffmpeg
 
 ADD ./botamusique /bot
